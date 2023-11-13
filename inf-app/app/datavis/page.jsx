@@ -2,7 +2,9 @@
 
 const datavis = () => {
   return (
-    <div>pageessss</div>
+    <div>
+    pageessss
+    </div>
   )
 }
 

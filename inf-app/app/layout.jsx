@@ -15,8 +15,8 @@ const layout = ({children}) => {
                 <div className='bg-color'/>
             </div>
             <main className='app'>
-                <Nav/>
-                {children}
+                <Nav className=""/>
+                <div className='mt-20'>{children}</div>  
                 <Foot/>
             </main>
         </body>

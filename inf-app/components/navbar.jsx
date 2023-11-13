@@ -1,3 +1,4 @@
+
 // Import necessary modules
 import Link from "next/link";
 import Image from "next/image";
@@ -5,7 +6,12 @@ import Image from "next/image";
 // Define functional component Nav
 const Nav = () => {
     return (
-        <nav className="lg:flex hidden justify-between w-full mb-16 pt-3 items-center">
+
+        <>
+  
+
+
+      <nav className="  dark:bg-gray-800 dark:border-gray-600 fixed lg:flex hidden justify-between w-full z-20 top-0 start-0 mb-16 pt-3 items-center ">
             {/* Link to home page with logo */}
             <Link href="/" className="flex gap-2 items-center">
                 <Image
@@ -37,15 +43,21 @@ const Nav = () => {
             </Link>
 
             {/* Desktop navigation */}
-            <div className="sm:flex hidden items-center">
+            <div className="lg:hidden flex items-center">
                 <div className="flex gap-3 md:gap-5">
                     {/* Link to data visibility page */}
-                  {/* <Link href="/datavis" className="datavis_btn">
+                   <Link href="/datavis" className="datavis_btn">
                         Data Visibility
-                        </Link> */}
+                        </Link> 
                 </div>
             </div>
         </nav>
+     
+
+
+
+
+        </>
     );
 };
 
