@@ -1,11 +1,17 @@
 import React from 'react';
+import Layout from '../components/layout';
 
-// Functional component named 'infoquality'
+const metadata = {
+  title: "INF181",
+  description: 'This an application that teaches CEOs how tech works'
+};
+
 const infoquality = () => {
   return (
-    <div className="container mx-auto mt-8  p-4 opacity-70 bg-pink-950 rounded-md shadow-lg shadow-pink-900/50 ">
+    <Layout pageTitle={metadata.title} pageDescription={metadata.description}>
+    <div className="container mx-auto mt-8 p-4 bg-slate-700">
       {/* Heading for Information Quality */}
-      <h1 className="text-4xl font-bold mb-4 text-yellow-400 text-center">
+      <h1 className="text-2xl font-bold mb-4">
         Information Quality:
       </h1>
 
@@ -55,6 +61,7 @@ const infoquality = () => {
       </section>
 
     </div>
+    </Layout>
   );
 };
 

@@ -1,23 +1,27 @@
 import React from 'react';
+import Layout from '../components/layout';
 
-// Functional component named 'datavis'
+const metadata = {
+  title: "INF181",
+  description: 'This an application that teaches CEOs how tech works'
+};
+
 const datavis = () => {
-  return (<>
-    <div className="container mx-auto mt-8  p-4 opacity-70 bg-pink-950 rounded-md shadow-lg shadow-pink-900/50 ">
+  return (
+    <Layout pageTitle={metadata.title} pageDescription={metadata.description}>
+    <div className="container mx-auto mt-8 p-4 bg-slate-700">
       {/* Heading for Data Visualization */}
-      <h1 className="text-4xl font-bold mb-4 text-yellow-400 text-center">
+      <h1 className="text-2xl font-bold mb-4">
         Data Visualization
       </h1>
-</div>
-<div className="container mx-auto mt-8  p-4 opacity-70 bg-pink-950 rounded-md shadow-lg shadow-pink-900/50 ">
+
       {/* Section 1: Definition of Data Visualization */}
       <section>
         <p>
           The graphical depiction of data/information is what we refer to as data visualization. This consists of diagrams such as graphs, pie charts, spreadsheets, and maps, to name a few. Data is collected about a certain topic, and comparisons are made using said data. To help understand the limits/scope of the data, diagrams are used.
         </p>
       </section>
-</div>
-<div className="container mx-auto mt-8  p-4 opacity-70 bg-pink-950 rounded-md shadow-lg shadow-pink-900/50 ">
+
       {/* Section 2: Functionality of Data Visualization */}
       <section>
         <p>
@@ -29,8 +33,7 @@ const datavis = () => {
           <li>Opportunity for communication with clients through interaction with graphs</li>
         </ul>
       </section>
-</div>
-<div className="container mx-auto mt-8  p-4 opacity-70 bg-pink-950 rounded-md shadow-lg shadow-pink-900/50 ">
+
       {/* Section 3: Example of Data Visualization Benefits */}
       <section>
         <p>
@@ -46,8 +49,7 @@ const datavis = () => {
           After analyzing this data on the charts, a business can create a strategy to make use of this opportunity. For example, ensuring that a lot more stock is available for that month. The business may try to identify the cause of the spike; in our example, the cause of the spike is due to Heritage Day, which is a South African holiday to celebrate culture and takes place on September 24th. Many South African tribes are known to use beads for festivities and cultural practices during this day. The company could make use of this information to directly target South Africa with special promotion deals and advertisements in South Africa, then make use of the charts to see if the strategy was profitable or not and identify areas that can be improved using different strategies (such as identifying which beads sell the most during this time in South Africa, providing more of those during the necessary time).
         </p>
       </section>
-</div>
-<div className="container mx-auto mt-8  p-4 opacity-70 bg-pink-950 rounded-md shadow-lg shadow-pink-900/50 ">
+
       {/* Section 4: Steps to Make Data Visualization */}
       <section>
         <p>
@@ -62,8 +64,7 @@ const datavis = () => {
           <li>Develop strategy.</li>
         </ol>
       </section>
-</div>
-<div className="container mx-auto mt-8  p-4 opacity-70 bg-pink-950 rounded-md shadow-lg shadow-pink-900/50 ">
+
       {/* Section 5: Tools for Data Visualization */}
       <section>
         <p>
@@ -72,8 +73,7 @@ const datavis = () => {
       </section>
 
     </div>
-    </>
-
+    </Layout>
   );
 };
 
