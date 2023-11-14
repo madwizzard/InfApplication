@@ -3,9 +3,9 @@ import React from 'react';
 // Functional component named 'infoquality'
 const infoquality = () => {
   return (
-    <div className="container mx-auto mt-8 p-4 bg-slate-700">
+    <div className="container mx-auto mt-8  p-4 opacity-70 bg-pink-950 rounded-md shadow-lg shadow-pink-900/50 ">
       {/* Heading for Information Quality */}
-      <h1 className="text-2xl font-bold mb-4">
+      <h1 className="text-4xl font-bold mb-4 text-yellow-400 text-center">
         Information Quality:
       </h1>
 

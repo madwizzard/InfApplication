@@ -3,9 +3,9 @@ import React from 'react';
 // Functional component named 'aibus'
 const aibus = () => {
   return (
-    <div className="container mx-auto mt-8 p-4 bg-slate-700">
+    <div className="container mx-auto mt-8  p-4 opacity-70 bg-pink-950 rounded-md shadow-lg shadow-pink-900/50 ">
       {/* Heading for AI and Information Systems in Business */}
-      <h1 className="text-2xl font-bold mb-4">
+      <h1 className="text-4xl font-bold mb-4 text-yellow-400 text-center">
         AI and Information Systems in Business:
       </h1>
 

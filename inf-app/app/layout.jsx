@@ -10,13 +10,13 @@ export const metadata ={
 const layout = ({children}) => {
   return (
     <html lang='en'>
-        <body>
-            <div className='main'>
+        <body className=''>
+            <div className='main '>
                 <div className='bg-color'/>
             </div>
-            <main className='app'>
+            <main className='app '>
                 <Nav className=""/>
-                <div className='mt-20'>{children}</div>  
+                <div className='mt-20 '>{children}</div>  
                 <Foot/>
             </main>
         </body>
